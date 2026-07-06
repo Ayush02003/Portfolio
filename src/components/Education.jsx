@@ -8,14 +8,16 @@ const Education = () => {
       degree: "Bachelor of Computer Engineering",
       institute: "Birla Vishvakarma Mahavidyalaya",
       duration: "2022-2025",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      details:
+        "Pursued advanced studies in computer engineering with a focus on software development, web technologies, database management, and modern application development.",
     },
     {
       id: 2,
       degree: "Diploma in Computer Engineering",
       institute: "Government Polytechnic Himatnagar",
       duration: "2019-2022",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      details:
+        "Built a strong foundation in programming, computer fundamentals, database systems, and practical software development concepts.",
     },
   ];
   return (
@@ -51,13 +53,12 @@ const Education = () => {
             {educationData.map((edu) => (
               <div
                 key={edu.id}
-              className="group relative p-6 rounded-2xl
+                className="group relative p-6 rounded-2xl
 bg-[#0F172A]
 border border-cyan-900/40
 transition-all duration-300
 hover:border-cyan-400
 hover:bg-[#16213E]"
-            
               >
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
                   <div className="flex items-center gap-3">
@@ -65,25 +66,23 @@ hover:bg-[#16213E]"
                       <GraduationCap className="text-primary" size={24} />
                     </div>
                     <div>
-                        <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
-                            {edu.degree}
-                        </h3>
-                        <p className="text-gray-400 text-sm">
-                            {edu.institute}
-                        </p>
-                    </div>                
-                  </div>
-                    <div className="flex items-center gap-2 text-xs font-medium bg-[#050816] px-3 py-1 rounded-full border border-gray-700 w-fit">
-                        <Calendar size={12} className="text-primary" />
-                        {edu.duration}
+                      <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
+                        {edu.degree}
+                      </h3>
+                      <p className="text-gray-400 text-sm">{edu.institute}</p>
                     </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-medium bg-[#050816] px-3 py-1 rounded-full border border-gray-700 w-fit">
+                    <Calendar size={12} className="text-primary" />
+                    {edu.duration}
+                  </div>
                 </div>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                    {edu.details}
+                  {edu.details}
                 </p>
                 <div className="flex items-center gap-2 text-[10px] uppercase-wider text-primary font-bold">
-                    <CheckCircle size={12} />
-                    Academic Excellence 
+                  <CheckCircle size={12} />
+                  Academic Excellence
                 </div>
               </div>
             ))}
