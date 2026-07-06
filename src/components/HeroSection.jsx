@@ -4,7 +4,7 @@ import hero from "../assets/hero.png";
 import resumePdf from "../assets/Resume_Ayush.pdf";
 export default function HeroSection() {
   return (
-    <section className="relative w-full" data-aos="zoom-in-up">
+    <section className="relative w-full" data-aos="zoom-in-up" id="hero">
       <div className="absolute top-0 inset-x-0 h-64 flex items-start">
         <div className="h-24 w-2/3 bg-linear-to-br frm-[#0c7fac] blur-2xxl invisible opacity-40"></div>
         <div className="h-20 w-3/4 bg-linear-to-r from-[#289eff] opacity-40 blur-2xl"></div>

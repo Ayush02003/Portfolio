@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3">
         
         <a
-          href="#home"
+          href="#hero"
           className="text-white text-2xl font-black cursor-pointer hover:scale-105 transition-transform duration-300"
         >
           <span className="text-primary">&lt;</span>
