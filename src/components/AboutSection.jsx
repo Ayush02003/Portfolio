@@ -38,7 +38,7 @@ const AboutSection = () => {
 
             <div className="text-center rounded-2xl bg-[#19243d] border border-[#1f1641] p-5 transition-all duration-300 hover:border-primary/50">
               <h3 className="text-primary font-bold text-2xl md:text-3xl">
-                170+
+                200+
               </h3>
               <p className="text-xs text-gray-400 uppercase tracking-wider mt-0.5">
                 Leetcode Problems
